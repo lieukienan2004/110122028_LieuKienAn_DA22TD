@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các loại khô</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 600;
+            background: linear-gradient(45deg, #2c3e50, #3498db);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .location-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .location-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .location-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            margin-bottom: 0;
+            transition: transform 0.3s ease;
+        }
+
+        .location-image:hover {
+            transform: scale(1.02);
+        }
+
+        .content-wrapper {
+            padding: 30px;
+        }
+
+        h2 {
+            color: #1a1a1a;
+            font-size: 2.2em;
+            margin: 0 0 25px 0;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .info-group {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-group:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .info-group strong {
+            color: #2c3e50;
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .info-group p {
+            margin: 0;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .map-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #2c3e50, #34495e);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-link:hover {
+            background: linear-gradient(45deg, #34495e, #2c3e50);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px auto;
+            }
+            
+            .location-image {
+                height: 300px;
+            }
+
+            .content-wrapper {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+                margin-bottom: 30px;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Các Loại Khô</h1>
+        
+        <div class="location-card">
+            <img src="./images/kho.jpg" alt="Các loại khô" class="location-image">
+            <div class="content-wrapper">
+                <h2>Đặc sản khô Trà Vinh</h2>
+
+                <div class="info-group">
+                    <strong>Khô Cá Lóc</strong>
+                    <p>Cá lóc khô với vị ngọt tự nhiên, có thể chế biến thành nhiều món như xào, nấu canh.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Khô Cá Kèo</strong>
+                    <p>Cá kèo khô, thường dùng trong các món xào hoặc nấu canh chua, mang lại hương vị mặn mà, ngọt tự nhiên.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Khô Tôm</strong>
+                    <p>Tôm khô, có thể dùng làm nguyên liệu trong nhiều món ăn hoặc ăn kèm với cơm. Hương vị ngọt và thơm.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Khô Mực</strong>
+                    <p>Mực khô, thường dùng làm món nhậu hoặc chế biến trong các món ăn khác với hương vị đậm đà, thơm ngon.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Khô Ba Khía</strong>
+                    <p>Ba khía khô, giòn và mặn mà, rất ngon khi ăn kèm với cơm.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Địa chỉ</strong>
+                    <p>52 Hùng Vương, Khóm 1, Trà Vinh, Việt Nam</p>
+                </div>
+
+                <a href="https://www.google.com/maps/place/T%C3%B4m+kh%C3%B4+T%C6%B0+C%C3%BAc/@9.7802501,106.172928,11z/" class="map-link">Xem trên Google Maps</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

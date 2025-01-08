@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cháo Cá Khoai</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .location-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .location-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .location-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            margin-bottom: 0;
+        }
+
+        .content-wrapper {
+            padding: 30px;
+        }
+
+        h2 {
+            color: #1a1a1a;
+            font-size: 2.2em;
+            margin: 0 0 25px 0;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .info-group {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-group:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .info-group strong {
+            color: #2c3e50;
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .info-group p {
+            margin: 0;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .map-link {
+            display: inline-block;
+            background-color: #2c3e50;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .map-link:hover {
+            background-color: #34495e;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px auto;
+            }
+            
+            .location-image {
+                height: 300px;
+            }
+
+            .content-wrapper {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="location-card">
+            <img src="./images/cakhoai.jpg" alt="Cháo Cá Khoai" class="location-image">
+            <div class="content-wrapper">
+                <h2>Cháo Cá Khoai</h2>
+
+                <div class="info-group">
+                    <strong>Hương Vị</strong>
+                    <p>Cháo cá khoai nổi bật với vị ngọt tự nhiên của cá khoai, thường được nấu cùng với gia vị và hành ngò, tạo nên hương vị thơm ngon, dễ chịu. Cháo có độ sánh mịn vừa phải, mang lại cảm giác dễ ăn, đặc biệt là cho trẻ nhỏ và người lớn tuổi.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Nguyên Liệu</strong>
+                    <p>Sử dụng cá khoai tươi, nguyên liệu sạch sẽ, đảm bảo chất lượng. Ngoài ra, các loại gia vị như gừng, hành, tiêu cũng được sử dụng để tăng thêm hương vị.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Không Gian và Dịch Vụ</strong>
+                    <p>Thường được phục vụ trong các quán ăn bình dân, tạo không khí ấm cúng, thoải mái. Nhân viên thường niềm nở, phục vụ nhanh chóng.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Giá Cả</strong>
+                    <p>Giá cả hợp lý, phù hợp với nhiều đối tượng thực khách. Đây là món ăn phổ biến và dễ tìm thấy ở các quán ăn vỉa hè hay nhà hàng.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Địa chỉ</strong>
+                    <p>59 Đ. Trương Văn Kĩnh, Phường 1, Trà Vinh, Việt Nam</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Số Điện Thoại</strong>
+                    <p>0972652653</p>
+                </div>
+
+                <a href="https://www.google.com/maps/search/Ch%C3%A1o+C%C3%A1+Khoai/@9.9433889,106.3227368,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D" class="map-link">Xem trên Google Maps</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

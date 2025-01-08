@@ -1,0 +1,248 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Trà Vinh</title>
+    <link rel="icon" type="image/x-icon" href="images/kienan.jpg" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <style>
+        /* Thêm CSS cho header */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            animation: slideDown 0.5s ease;
+        }
+
+        #icon {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .auth-btn {
+            background-color: #45a049;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .auth-btn:hover {
+            background-color: #357a38;
+        }
+
+        .welcome-text {
+            color: white;
+            margin-right: 15px;
+        }
+
+        .search-form {
+            margin-left: 20px;
+        }
+
+        .search-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            max-width: 300px;
+        }
+
+        .search-wrapper input {
+            width: 100%;
+            padding: 10px 40px 10px 15px;
+            border: 2px solid #ffffff;
+            border-radius: 25px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .search-wrapper input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .search-wrapper button {
+            position: absolute;
+            right: 5px;
+            padding: 8px 12px;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        /* CSS hiện tại của bạn */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #007BFF;
+            text-align: center;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+        .img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
+            height: 0;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Thêm header -->
+    <header>
+        <img src="./images/kienan.jpg" id="icon">
+        <h1>Giới Thiệu Đặc Sản Trà Vinh</h1>
+        <nav>
+            <ul>
+                <li><a href="dangky.php" class="auth-btn">Đăng ký</a></li>
+                <li><a href="dangnhap.php" class="auth-btn">Đăng nhập</a></li>
+                <li><a href="index.php">Trang chủ</a></li>
+                <li><a href="#lien-he" class="auth-btn" onclick="alertLogin()">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <form class="search-form" method="GET" action="index.php">
+            <div class="search-wrapper">
+                <input type="text" name="search" placeholder="Tìm kiếm món ăn...">
+                <button type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </form>
+    </header>
+
+    <!-- Nội dung hiện tại của bạn -->
+    <div class="container">
+        <h1>Giới Thiệu về Trà Vinh</h1>
+        
+        <h2>1. Vị Trí Địa Lý và Khí Hậu</h2>
+        <div class="img-container">
+            <img src="./images/dialy.jpg" alt="Bản đồ và cảnh quan Trà Vinh">
+        </div>
+        <p>
+            Trà Vinh là một tỉnh thuộc miền Tây Nam Bộ, nằm ở phía Nam sông Hậu. Tỉnh này giáp với Bến Tre, Vĩnh Long và Sóc Trăng. Với hệ thống kênh rạch chằng chịt, Trà Vinh không chỉ thuận tiện cho việc giao thông đường thủy mà còn mang lại vẻ đẹp tự nhiên độc đáo. Khí hậu ở Trà Vinh là khí hậu nhiệt đới gió mùa, với mùa mưa và mùa khô rõ rệt, rất thích hợp cho phát triển nông nghiệp.
+        </p>
+        
+        <h2>2. Lịch Sử và Văn Hóa</h2>
+        <div class="img-container">
+            <img src="./images/lichsu.jpg" alt="Chùa Khmer tại Trà Vinh">
+        </div>
+        <p>
+            Trà Vinh có bề dày lịch sử lâu đời, với ảnh hưởng mạnh mẽ từ văn hóa Khmer. Tỉnh này là nơi cư trú của nhiều người Khmer, và văn hóa của họ thể hiện rõ nét qua kiến trúc chùa chiền, lễ hội và phong tục tập quán. Các ngôi chùa nổi bật như chùa Hang, chùa Vàm Ray không chỉ là nơi thờ cúng mà còn là biểu tượng văn hóa đặc trưng của vùng đất này.
+        </p>
+        
+        <h2>3. Đặc Sản Ẩm Thực</h2>
+        <div class="img-container">
+            <img src="./images/dacsan.jpg" alt="Bún suông Trà Vinh">
+        </div>
+        <p>
+            Trà Vinh nổi tiếng với nền ẩm thực phong phú và độc đáo. Một trong những món ăn đặc trưng không thể không nhắc đến là bún suông, được chế biến từ hải sản tươi sống và nước lèo đậm đà. Ngoài ra, các món như bánh tét, bánh hỏi, và các món hải sản như cá lóc nướng trui cũng rất được yêu thích.
+        </p>
+        
+        <h2>4. Thiên Nhiên và Cảnh Quan</h2>
+        <div class="img-container">
+            <img src="./images/thiennhien.jpg" alt="Cảnh quan thiên nhiên Trà Vinh">
+        </div>
+        <p>
+            Trà Vinh được thiên nhiên ưu ái với cảnh quan tuyệt đẹp, từ những cánh đồng xanh mướt đến các rừng tràm bạt ngàn. Một số địa điểm du lịch nổi bật như Khu Du Lịch Sinh Thái Mỹ Long và chùa Hang là những điểm đến lý tưởng cho du khách.
+        </p>
+        
+        <h2>5. Con Người và Cuộc Sống</h2>
+        <div class="img-container">
+            <img src="./images/connguoi.jpg" alt="Cuộc sống người dân Trà Vinh">
+        </div>
+        <p>
+            Người dân Trà Vinh thân thiện, hiếu khách và luôn sẵn sàng chào đón du khách. Cuộc sống của họ gắn liền với nông nghiệp, đặc biệt là trồng lúa, dừa và nhiều loại trái cây nhiệt đới.
+        </p>
+
+        <h2>6. Video Giới Thiệu</h2>
+        <div class="video-container">
+            <iframe width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/mdtG1Cps6bo" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+
+        <footer>
+            <p>Trà Vinh - Điểm đến hấp dẫn cho những ai yêu thích khám phá vẻ đẹp văn hóa và thiên nhiên miền Tây.</p>
+        </footer>
+    </div>
+
+    <script>
+        function alertLogin() {
+            alert('Vui lòng đăng nhập để sử dụng chức năng liên hệ!');
+            window.location.href = 'dangnhap.php';
+        }
+    </script>
+</body>
+</html>

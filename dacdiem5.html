@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bánh Bao Vĩnh Kim</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .location-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .location-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .location-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            margin-bottom: 0;
+        }
+
+        .content-wrapper {
+            padding: 30px;
+        }
+
+        h2 {
+            color: #1a1a1a;
+            font-size: 2.2em;
+            margin: 0 0 25px 0;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .info-group {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-group:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .info-group strong {
+            color: #2c3e50;
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .info-group p {
+            margin: 0;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .map-link {
+            display: inline-block;
+            background-color: #2c3e50;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .map-link:hover {
+            background-color: #34495e;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px auto;
+            }
+            
+            .location-image {
+                height: 300px;
+            }
+
+            .content-wrapper {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="location-card">
+            <img src="./images/banhbao.jpg" alt="Bánh Bao Vĩnh Kim" class="location-image">
+            <div class="content-wrapper">
+                <h2>Bánh Bao Vĩnh Kim</h2>
+
+                <div class="info-group">
+                    <strong>Hương Vị</strong>
+                    <p>Bánh có hương vị đậm đà, vỏ bánh mềm mịn và nhân bên trong được chế biến tươi ngon, mang lại cảm giác thỏa mãn khi thưởng thức.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Nguyên Liệu</strong>
+                    <p>Quán sử dụng nguyên liệu tươi, đảm bảo an toàn vệ sinh thực phẩm.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Không Gian</strong>
+                    <p>Quán có không gian nhỏ gọn nhưng sạch sẽ, tạo cảm giác thân thiện.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Thái Độ Phục Vụ</strong>
+                    <p>Nhân viên phục vụ nhanh nhẹn, nhiệt tình và thân thiện.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Giá Cả</strong>
+                    <p>Giá cả hợp lý so với chất lượng món ăn, phù hợp với nhiều đối tượng khách hàng.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Địa chỉ</strong>
+                    <p>300B Phạm Ngũ Lão, Phường 1, Trà Vinh, Việt Nam</p>
+                </div>
+
+                <a href="https://www.google.com/maps/search/B%C3%A1nh+Bao+V%C4%A9nh+Kim/@9.9339002,106.3392217,17z?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D" class="map-link">Xem trên Google Maps</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

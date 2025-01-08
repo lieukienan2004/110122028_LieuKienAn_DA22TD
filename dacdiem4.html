@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bún Suông</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+
+        .location-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            margin-bottom: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .location-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .location-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            margin-bottom: 0;
+        }
+
+        .content-wrapper {
+            padding: 30px;
+        }
+
+        h2 {
+            color: #1a1a1a;
+            font-size: 2em;
+            margin: 0 0 25px 0;
+            font-weight: 600;
+        }
+
+        .info-group {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-group:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .info-group strong {
+            color: #2c3e50;
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .info-group p {
+            margin: 0;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .map-link {
+            display: inline-block;
+            background-color: #2c3e50;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .map-link:hover {
+            background-color: #34495e;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px auto;
+            }
+            
+            .location-image {
+                height: 300px;
+            }
+
+            .content-wrapper {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+                margin-bottom: 30px;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bún Suông</h1>
+        
+        <div class="location-card">
+            <img src="./images/bunsuong.jpg" alt="Bún Suông Hùi Yến" class="location-image">
+            <div class="content-wrapper">
+                <h2>Bún Suông HÙI YẾN</h2>
+                
+                <div class="info-group">
+                    <strong>Hương Vị</strong>
+                    <p>Nước lèo của bún suông Hùi Yến thường được chế biến từ hải sản tươi ngon, mang lại hương vị đậm đà và thanh mát. Sự kết hợp giữa vị ngọt tự nhiên của nước dùng và các loại rau sống tạo nên một trải nghiệm ẩm thực phong phú.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Thành Phần</strong>
+                    <p>Món ăn thường sử dụng nguyên liệu tươi ngon, từ bún tươi đến hải sản như tôm và mực. Gia vị được sử dụng rất đa dạng, thường có mùi thơm hấp dẫn của hành, tiêu và các loại thảo mộc.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Trải Nghiệm</strong>
+                    <p>Bún suông Hùi Yến thường được phục vụ nóng hổi, rất thích hợp cho những ngày se lạnh. Không gian quán thoải mái và thân thiện, tạo cảm giác dễ chịu và ấm cúng khi thưởng thức món ăn.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Địa chỉ</strong>
+                    <p>56/2 Đường Hùng Vương, Phường 3, Trà Vinh, 084000, Việt Nam</p>
+                </div>
+
+                <a href="https://www.google.com/maps/place/B%C3%BAn+Su%C3%B4ng+H%C3%99I+Y%E1%BA%BEN+-+%C4%90%E1%BA%B7c+s%E1%BA%A3n+Tr%C3%A0+Vinh/@9.9375425,106.3397605,17z/data=!3m1!4b1!4m6!3m5!1s0x31a017563f0bbff7:0xd27972836cb9e408!8m2!3d9.9375425!4d106.3423354!16s%2Fg%2F11fkq9mpbn?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D" class="map-link">Xem trên Google Maps</a>
+            </div>
+        </div>
+
+        <div class="location-card">
+            <img src="./images/bunsuong1.jpg" alt="Bún Suông Dư Vân" class="location-image">
+            <div class="content-wrapper">
+                <h2>Bún Suông DƯ VÂN</h2>
+                
+                <div class="info-group">
+                    <strong>Hương Vị</strong>
+                    <p>Nước lèo của bún suông Dư Vân được chế biến từ hải sản tươi ngon và xương heo, mang lại hương vị đậm đà, ngọt thanh. Sự kết hợp hoàn hảo giữa các loại gia vị và rau sống tạo nên một món ăn hấp dẫn.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Thành Phần</strong>
+                    <p>Món bún suông này sử dụng nguyên liệu tươi ngon, bao gồm bún mềm, tôm, mực và các loại rau sống. Gia vị được lựa chọn kỹ lưỡng, thường có mùi thơm nồng nàn của hành, tiêu và các loại thảo mộc.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Trải Nghiệm</strong>
+                    <p>Với hơn 30 năm kinh nghiệm, quán vẫn giữ vững chất lượng và hương vị truyền thống. Không gian quán ấm cúng, thân thiện, tạo cảm giác dễ chịu cho thực khách.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Địa chỉ</strong>
+                    <p>Bún suông DƯ VÂN since 1986 - Đặc sản Trà Vinh với công thức gia truyền</p>
+                </div>
+
+                <a href="https://www.google.com/maps/search/B%C3%BAn+Su%C3%B4ng+D%C6%AF+V%C3%82N/@9.9156202,106.3139172,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D" class="map-link">Xem trên Google Maps</a>
+            </div>
+        </div>
+
+        <div class="location-card">
+            <img src="./images/bunsuong2.jpg" alt="Bún Suông Bé Hai" class="location-image">
+            <div class="content-wrapper">
+                <h2>Bún Suông Bé Hai</h2>
+                
+                <div class="info-group">
+                    <strong>Hương Vị</strong>
+                    <p>Nước lèo của bún suông Bé Hai được chế biến từ hải sản tươi sống và xương heo, mang lại hương vị đậm đà và thơm ngon. Sự kết hợp của các loại gia vị và rau sống làm tăng thêm độ phong phú cho món ăn.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Thành Phần</strong>
+                    <p>Quán sử dụng nguyên liệu tươi ngon, từ bún mềm mịn đến các loại hải sản như tôm, mực. Gia vị được thêm vào rất đa dạng, thường có mùi thơm của hành, tiêu, và các loại thảo mộc.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Trải Nghiệm</strong>
+                    <p>Không gian quán rộng rãi và thân thiện, tạo cảm giác thoải mái cho thực khách. Dịch vụ nhanh chóng và nhiệt tình, luôn sẵn sàng đáp ứng nhu cầu của khách hàng.</p>
+                </div>
+
+                <div class="info-group">
+                    <strong>Địa chỉ</strong>
+                    <p>85 Trần Quốc Tuấn, Phường 3, Trà Vinh, Việt Nam</p>
+                </div>
+
+                <a href="https://www.google.com/maps/place/B%C3%BAn+Su%C3%B4ng+B%C3%A9+Hai/@9.9375425,106.3397605,17z/data=!4m6!3m5!1s0x31a01791d49f6459:0x855b014129813697!8m2!3d9.9339002!4d106.3417966!16s%2Fg%2F11t5jh76lr?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D" class="map-link">Xem trên Google Maps</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
